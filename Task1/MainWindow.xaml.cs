@@ -52,9 +52,11 @@ namespace Task1
 
         private void ToggleButton_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox.FontStyle == FontStyles.Normal)
-                textBox.FontStyle = FontStyles.Italic;
-            else textBox.FontStyle = FontStyles.Normal;
+            //if (textBox.FontStyle == FontStyles.Normal)
+            //    textBox.FontStyle = FontStyles.Italic;
+            //else textBox.FontStyle = FontStyles.Normal;
+
+            textBox.FontStyle = textBox.FontStyle != FontStyles.Italic ? FontStyles.Italic : FontStyles.Normal;
         }
 
         private void ToggleButton_Click_1(object sender, RoutedEventArgs e)
